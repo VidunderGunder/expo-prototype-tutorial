@@ -1,4 +1,6 @@
-# Expo: App and Web in one
+# App and Web in one with [Expo](https://expo.io/)
+
+![Expo](images/Expo.png)
 
 Let's make an application from start to finish!
 
