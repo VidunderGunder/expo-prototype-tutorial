@@ -60,9 +60,9 @@ export default () => {
           {luv && (
             <>
               <Seperator />
-              <Text category="s1" style={{ margin: "auto" }}>
+              {/* <Text category="s1" style={{ margin: "auto" }}>
                 {luv}
-              </Text>
+              </Text> */}
             </>
           )}
         </Card>

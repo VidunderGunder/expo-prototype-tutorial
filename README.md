@@ -90,7 +90,7 @@ We will need an integrated development environment (IDE) for this, and I will us
    - Confirm the repo name and choose if you want to have it public or private
    - It is now hosted on your GitHub!
 
-## 📱 Create your App
+## 🕸️ Create a Web App
 
 Your app starts inn App.js, which will look something like this:
 
@@ -448,11 +448,33 @@ const Header = (props) => (
 
 ![picture 13](images/3879a39fbc496d50e409a5da6cc56d9f973ece7f15aae903e0dc734c28f95437.png)  
 
-Congrats! We now have a functioning app.
+Congrats - we now have a functioning web app! 😻
 
-Now onto sharing it with the world! 😻
+This level is sufficient for most prototypes, and you can be safe knowing that your code will be useable on mobile as well.
+
+Cool, cool.
+
+## 🤖 Android
+
+TODO
+
+## 🍎 iOS
+
+TODO
 
 ## 🌐 Publish
+
+[Create an Expo account](https://expo.io/signup).
+
+Run the following in the terminal:
+
+```shell
+expo publish
+```
+
+Login when prompted.
+
+TODO
 
 ## 💡 Tips and Tricks
 
