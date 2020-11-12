@@ -362,8 +362,6 @@ The form is now just visual elements on the card, but we have to add some functi
 
 There are endless ways of doing this, so I will make as simple as possible and only use React components and functions here. If you want to learn ways of doing this more efficiently and scalable, take a look at my playlist: [Zero to Fullstack Hero](https://www.youtube.com/playlist?list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## 🌐 Publish
 
 ## 💡 Tips and Tricks
