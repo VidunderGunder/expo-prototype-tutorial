@@ -47,7 +47,7 @@ We will need an integrated development environment (IDE) for this, and I will us
    
       ![picture 7](images/b27c35716c2c2d47bb7a315129cb4b2d11137caed957a6504af43f53f94735e2.png)
    
-   1. Install these extensions
+   2. Install these extensions
       - React Native Tools
       - VS Code ES7 React/Redux/React-Native/JS snippets
       - Community Material Theme
@@ -58,26 +58,42 @@ We will need an integrated development environment (IDE) for this, and I will us
    - US/UK: <kbd>Ctrl</kbd> + <kbd>`</kbd>
    - Click `View`, `Terminal` in the toolbar  
     
-       ![picture 1](images/16747341513ca5f8b46e48606d4146f4bae05c3b4dca580817fc56b028bc2d4b.png)  
+      ![picture 1](images/16747341513ca5f8b46e48606d4146f4bae05c3b4dca580817fc56b028bc2d4b.png)  
 
-1.  Install Expo, by pasting the following to the terminal. Press <kbd>Enter</kbd> to run the command:
-    ```shell
-    npm install --global expo-cli
-    ```
-1. Initialize a expo project:
-    ```shell
-    expo init my-project
-    ```
-    Choose `black` as your template when prompted (it should be the default option).
+1.  Install Expo, by pasting the following to the terminal. Press <kbd>Enter</kbd> to run the command:  
+
+      ```shell
+      npm install --global expo-cli
+      ```
+
+1. Initialize a expo project:  
+
+      ```shell
+      expo init my-project
+      ```
+
+   Choose `black` as your template when prompted (it should be the default option).
+
 1. Start your app in your browser:
-    ```shell
-    yarn web
-    ```
+
+      ```shell
+      yarn web
+      ```
+
+1. Publish your repository
+   - Open the command palette
+   - Use the command `Publish to GitHub`
+   - Confirm the repo name and choose if you want to have it public or private
+   - It is now hosted on your GitHub!
 
 ## 💡 Tips and Tricks
 
 - Right click the VSCode shortcut to open recently used projects quickly  
 
-    ![picture 1](images/ca5c3e98b60cc746f467d9a4f2d0b22ad2f5bf06d007ef0557962d8db8ea5c50.png)  
+   ![picture 1](images/ca5c3e98b60cc746f467d9a4f2d0b22ad2f5bf06d007ef0557962d8db8ea5c50.png)  
 
-- To clone a project (this for example) copy the GitHub-repo URL
+- Clone a project
+   1. copy the GitHub-repo URL
+
+
+
