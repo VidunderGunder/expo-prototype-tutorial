@@ -1,13 +1,11 @@
-# Code once, run anywhere
+# Expo: App and Web in one
 
-Let's make a prototype from start to finish!
+Let's make an application from start to finish!
 
 What we'll support:
 
 -  Web (all platforms)
 -  App (iOS and Android)
-
-Shoutout to [Expo](https://expo.io/) for making this possible. 
 
 ## 🚀 Quick Start
 
@@ -450,7 +448,7 @@ const Header = (props) => (
 
 Congrats - we now have a functioning web app! 😻
 
-This level is sufficient for most prototypes, and you can be safe knowing that your code will be useable on mobile as well.
+This level is sufficient for most prototypes, and you can be safe knowing that your code will be useable (with some tweaks) on mobile as well.
 
 Cool, cool.
 
