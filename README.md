@@ -35,34 +35,35 @@ We will need an integrated development environment (IDE) for this, and I will us
 
 1. Install [VSCode](https://code.visualstudio.com/)
 1. Install [Node](https://nodejs.org/en/download/)
-1. Install [Git](https://git-scm.com/)
-1. [Create a GitHub user](https://github.com/join)
-1. Open VSCode
-1. Install VSCode extension
+2. Install [Yarn](https://yarnpkg.com/lang/en/docs/install/)
+3. Install [Git](https://git-scm.com/)
+4. [Create a GitHub user](https://github.com/join)
+5. Open VSCode
+6. Install VSCode extension
    1. Open extensions  
    
       ![picture 7](images/b27c35716c2c2d47bb7a315129cb4b2d11137caed957a6504af43f53f94735e2.png)
    
-   1. Install these extensions
+   2. Install these extensions
       - React Native Tools
       - VS Code ES7 React/Redux/React-Native/JS snippets
       - Community Material Theme
       - Material Icon Theme
       - Bracket Pair Colorizer 2
-1. Open your terminal with one of the following:
+7. Open your terminal with one of the following:
    - NO: <kbd>Ctrl</kbd> + <kbd>Ø</kbd>
    - US/UK: <kbd>Ctrl</kbd> + <kbd>`</kbd>
    - Click `View`, `Terminal` in the toolbar  
     
       ![picture 1](images/16747341513ca5f8b46e48606d4146f4bae05c3b4dca580817fc56b028bc2d4b.png)  
 
-1.  Install Expo, by pasting the following to the terminal. Press <kbd>Enter</kbd> to run the command:  
+8.  Install Expo, by pasting the following to the terminal. Press <kbd>Enter</kbd> to run the command:  
 
       ```shell
       npm install --global expo-cli
       ```
 
-1. Initialize a expo project:  
+9. Initialize a expo project:  
 
       ```shell
       expo init my-project
@@ -72,19 +73,19 @@ We will need an integrated development environment (IDE) for this, and I will us
 
    _Note: The project will be saved where your terminal is located, so change this if you have a preferred place to store coding projects._
 
-1. Start your app in your browser:
+10. Start your app in your browser:
 
       ```shell
       yarn web
       ```
    
-1. If everything worked correctly you should be met with this:
+11. If everything worked correctly you should be met with this:
 
       ![picture 3](images/ca0f1cdc00529fcaf32e8ee4c085f7387021ac4e823cab40d1e32945e703c9b7.png)  
 
    So let's do just that, but first - we want to store our code in the cloud.
 
-1. Publish your repository
+12. Publish your repository
    - Open the command palette
    - Use the command `Publish to GitHub`
    - Confirm the repo name and choose if you want to have it public or private
