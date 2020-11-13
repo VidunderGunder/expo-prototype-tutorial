@@ -35,7 +35,7 @@ export default () => {
               setFav(text);
             }}
           />
-          <Seperator />
+          <Separator />
           <Input
             label="How many cats do you want?"
             placeholder="Give a number..."
@@ -45,7 +45,7 @@ export default () => {
             }}
             number-pad="numeric"
           />
-          <Seperator />
+          <Separator />
           <Button
             onPress={() => {
               if (fav !== "" && num !== "") {
@@ -59,7 +59,7 @@ export default () => {
           </Button>
           {luv && (
             <>
-              <Seperator />
+              <Separator />
               {/* <Text category="s1" style={{ margin: "auto" }}>
                 {luv}
               </Text> */}
@@ -71,7 +71,7 @@ export default () => {
   );
 };
 
-const Seperator = () => {
+const Separator = () => {
   return <View style={{ margin: ".5em" }}></View>;
 };
 

@@ -328,12 +328,12 @@ export default () => {
             label="Describe your favourite cat"
             placeholder="Type here..."
           />
-          <Seperator />
+          <Separator />
           <Input
             label="How many cats do you want?"
             placeholder="Give a number..."
           />
-          <Seperator />
+          <Separator />
           <Button>Calculate your love for Cats</Button>
         </Card>
       </ImageBackground>
@@ -341,7 +341,7 @@ export default () => {
   );
 };
 
-const Seperator = () => {
+const Separator = () => {
   return <View style={{ margin: ".5em" }}></View>;
 };
 
@@ -359,7 +359,7 @@ The form is now just visual elements on the card, but we have to add some functi
 
 There are endless ways of doing this, so I will make it as simple as possible and only use React components and functions here. If you want to learn ways of doing stuff like this more efficiently and scalable, take a look at my playlist: [Zero to Fullstack Hero](https://www.youtube.com/playlist?list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0).
 
-If you are not familiar with what's going on below, just copy-paste the whole thing, and learn those concepts later by watching the playlist.
+If you are not familiar with what's going on below, just copy-paste the whole thing and learn those concepts later by watching the playlist.
 
 ```js
 import React, { useState } from "react";
@@ -399,7 +399,7 @@ export default () => {
               setFav(text);
             }}
           />
-          <Seperator />
+          <Separator />
           <Input
             label="How many cats do you want?"
             placeholder="Give a number..."
@@ -409,7 +409,7 @@ export default () => {
             }}
             number-pad="numeric"
           />
-          <Seperator />
+          <Separator />
           <Button
             onPress={() => {
               if (fav !== "" && num !== "") {
@@ -423,7 +423,7 @@ export default () => {
           </Button>
           {luv && (
             <>
-              <Seperator />
+              <Separator />
               <Text category="s1" style={{ margin: "auto" }}>
                 {luv}
               </Text>
@@ -435,7 +435,7 @@ export default () => {
   );
 };
 
-const Seperator = () => {
+const Separator = () => {
   return <View style={{ margin: ".5em" }}></View>;
 };
 
