@@ -126,7 +126,7 @@ We will need an integrated development environment (IDE) for this, and I will us
     - Linux:
         - Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>
 
-    Something like this should pop up:
+    Click on the console-tab, as that's where we want to be most of the time. It should look something like this:
 
     ![picture 3](images/c13ccd5054a2d8e9f56a0df563bfb6f8b9d370331761bfbeb8f4c2ba8f4f74ec.png)
 
