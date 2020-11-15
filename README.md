@@ -58,23 +58,25 @@ We will need an integrated development environment (IDE) for this, and I will us
 1. Install [Git](https://git-scm.com/)
 1. [Create a GitHub user](https://github.com/join)
 1. Open VSCode
-1. Install VSCode extension
+1. Install VSCode extension (optional, but recommended)
     1. Open extensions  
         ![picture 7](images/b27c35716c2c2d47bb7a315129cb4b2d11137caed957a6504af43f53f94735e2.png)
-   
     1. Install these extensions
+        - Prettier
         - React Native Tools
         - VS Code ES7 React/Redux/React-Native/JS snippets
-        - Community Material Theme
-        - Material Icon Theme
         - Bracket Pair Colorizer 2
+        - Community Material Theme
+          - I use the Palenight High Contrast variant
+        - Material Icon Theme
+
 1. Open your terminal with one of the following:
     - NO: <kbd>Ctrl</kbd> + <kbd>Ø</kbd>
     - US/UK: <kbd>Ctrl</kbd> + <kbd>`</kbd>
     - Click `View`, `Terminal` in the toolbar  
         ![picture 1](images/16747341513ca5f8b46e48606d4146f4bae05c3b4dca580817fc56b028bc2d4b.png)  
 
-1.  Install Expo, by pasting the following to the termin1l. Press <kbd>Enter</kbd> to run the command:  
+1. Install Expo, by pasting the following to the terminal. Press <kbd>Enter</kbd> to run the command:  
 
     ```shell
     npm install --global expo-cli
@@ -536,6 +538,3 @@ TODO
 - Right click the VSCode shortcut to open recently used projects quickly  
 
    ![picture 1](images/ca5c3e98b60cc746f467d9a4f2d0b22ad2f5bf06d007ef0557962d8db8ea5c50.png)  
-
-
-
