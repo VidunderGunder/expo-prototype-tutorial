@@ -82,7 +82,7 @@ We will need an integrated development environment (IDE) for this, and I will us
     npm install --global expo-cli
     ```
 
-1.  Initialize a expo project:  
+1. Initialize a expo project:  
 
     ```shell
     expo init my-project
