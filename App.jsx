@@ -17,11 +17,18 @@ export default () => {
 
   return (
     <ApplicationProvider {...eva} theme={eva.dark}>
-      <ImageBackground source={background} style={{ height: "100%" }}>
+      <ImageBackground
+        source={background}
+        style={{
+          height: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Card
           header={Header}
           style={{
-            margin: "auto",
             width: 500,
             maxWidth: "100%",
           }}
@@ -43,7 +50,7 @@ export default () => {
             onChangeText={(text) => {
               setNum(text.replace(/[^0-9]/g, ""));
             }}
-            number-pad="numeric"
+            keyboardType="number-pad"
           />
           <Separator />
           <Button
@@ -57,12 +64,17 @@ export default () => {
           >
             Calculate your love for Cats
           </Button>
-          {luv && (
+          {!!luv && (
             <>
               <Separator />
-              {/* <Text category="s1" style={{ margin: "auto" }}>
+              <Text
+                category="s1"
+                style={{
+                  textAlign: "center",
+                }}
+              >
                 {luv}
-              </Text> */}
+              </Text>
             </>
           )}
         </Card>
@@ -72,7 +84,7 @@ export default () => {
 };
 
 const Separator = () => {
-  return <View style={{ margin: ".5em" }}></View>;
+  return <View style={{ margin: 8 }} />;
 };
 
 const Header = (props) => (

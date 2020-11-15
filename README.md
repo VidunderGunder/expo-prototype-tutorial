@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
 
 ```
 
-_*I will rename the file to App.jsx, because of personal preference. Feel free to do the same - just remember to restart expo, by terminating it in the console (Click on the terminal, <kbd>Ctrl</kbd> + <kbd>C</kbd>) and running `yarn web` afterwards._
+_*I will rename the file to App.jsx, because of personal preference. Feel free to do the same - just remember to restart Expo, by terminating it in the console (Click on the terminal, <kbd>Ctrl</kbd> + <kbd>C</kbd>) and running `yarn web` afterwards._
 
 Let's minimalize this as much as possible.
 
@@ -387,7 +387,7 @@ export default () => {
 };
 
 const Separator = () => {
-  return <View style={{ margin: ".5em" }}></View>;
+  return <View style={{ margin: 8 }}></View>;
 };
 
 const Header = (props) => (
@@ -466,7 +466,7 @@ export default () => {
           >
             Calculate your love for Cats
           </Button>
-          {luv && (
+          {!!luv && (
             <>
               <Separator />
               <Text category="s1" style={{ margin: "auto" }}>
@@ -481,7 +481,7 @@ export default () => {
 };
 
 const Separator = () => {
-  return <View style={{ margin: ".5em" }}></View>;
+  return <View style={{ margin: 8 }}></View>;
 };
 
 const Header = (props) => (
@@ -500,13 +500,162 @@ This level is sufficient for most prototypes, and you can be safe knowing that y
 
 Cool, cool.
 
-## 🤖 Android
+## 🍎🤖 iOS and Android
 
-TODO
+Install the [Expo Development Client](https://expo.io/tools#client) on your device.
 
-## 🍎 iOS
+![picture 1](images/08ec57965f39030326e5dcd2d7b0d6329c3a98bb49da25c1e9fdd0e8b12e3a06.png)  
 
-TODO
+Connect the device to the same network as your development environment (this probably won't work on a school- or work network - more on that below*).
+
+Open up the Expo app.
+
+Press `Scan QR Code`.
+
+Scan the QR code on your Expo server.
+
+![picture 2](images/2e2c8081ac60d67e10ee523f667949bcfd643dbf1f49d7cba000f118041205ff.png)  
+
+You should connect automatically.
+
+![picture 3](images/33df5d97790ffc424766de51029298058e19abad1349399dc7b007abaddbbb8e.png)  
+
+
+_*IF you can't connect your device on the same network, switch to <button>Tunnel</button> instead of <button>LAN</button> and try again._
+
+---
+
+If you can't connect directly, you will have to install an emulator for iOS (Mac only) or Android. We won't go into detail about that here, but check out these guides if you had no luck with the above method:
+
+- [iOS](https://docs.expo.io/workflow/ios-simulator/)  
+- [Android](https://docs.expo.io/workflow/android-studio-emulator/)
+
+---
+
+If you got your device connected, let's test the app!
+
+I'll just press the calculate button...
+
+![picture 4](images/8067c0afedb5c84a3c1aec2e82401a80ee4847c77e3c6125740b1a615bd7cdba.png)  
+
+Uh-oh 😓
+
+That text is supposed to be center aligned. That probably means that `margin: "auto"` doesn't center things on the app. That can be fixed by using `textAlign: "center"` instead.
+
+Thinking about it, the card was supposed to be centered as well. We'll have to fix that by using [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+
+`Describe your favourite cat` seems to work ok.
+
+`How many cats do you want?` does work, but should really have a number pad as the default input. Seems like I didn't do it right when writing the web app. I wrote `number-pad="numeric"`, but it should really be `keyboardType="number-pad"` - woopsies! 🤷‍♂️
+
+```js
+import React, { useState } from "react";
+import { ImageBackground, View } from "react-native";
+import background from "./assets/kitten.jpg";
+import * as eva from "@eva-design/eva";
+import {
+  ApplicationProvider,
+  Button,
+  Card,
+  Input,
+  Text,
+} from "@ui-kitten/components";
+
+export default () => {
+  const [fav, setFav] = useState("");
+  const [num, setNum] = useState("");
+  const [luv, setLuv] = useState("");
+
+  return (
+    <ApplicationProvider {...eva} theme={eva.dark}>
+      <ImageBackground
+        source={background}
+        style={{
+          height: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Card
+          header={Header}
+          style={{
+            width: 500,
+            maxWidth: "100%",
+          }}
+          disabled
+        >
+          <Input
+            label="Describe your favourite cat"
+            placeholder="Type here..."
+            value={fav}
+            onChangeText={(text) => {
+              setFav(text);
+            }}
+          />
+          <Separator />
+          <Input
+            label="How many cats do you want?"
+            placeholder="Give a number..."
+            value={num}
+            onChangeText={(text) => {
+              setNum(text.replace(/[^0-9]/g, ""));
+            }}
+            keyboardType="number-pad"
+          />
+          <Separator />
+          <Button
+            onPress={() => {
+              if (fav !== "" && num !== "") {
+                setLuv(fav.length * Number(num));
+              } else {
+                setLuv("Fill in the important form above first.");
+              }
+            }}
+          >
+            Calculate your love for Cats
+          </Button>
+          {!!luv && (
+            <>
+              <Separator />
+              <Text
+                category="s1"
+                style={{
+                  textAlign: "center",
+                }}
+              >
+                {luv}
+              </Text>
+            </>
+          )}
+        </Card>
+      </ImageBackground>
+    </ApplicationProvider>
+  );
+};
+
+const Separator = () => {
+  return <View style={{ margin: 8 }} />;
+};
+
+const Header = (props) => (
+  <View {...props}>
+    <Text category="h6">Kitten App</Text>
+    <Text category="s1">Purr purr</Text>
+  </View>
+);
+```
+
+TODO:
+
+- [ ] Handle navbar
+
+## ✨ Polishing
+
+TODO:
+
+- [ ] Icons and splash screen
+- [ ] App info
 
 ## 🌐 Publish
 
@@ -519,6 +668,13 @@ expo publish
 ```
 
 Login when prompted.
+
+TODO:
+
+- [ ] App Store
+- [ ] Play Store
+
+## 🤔 What's next?
 
 TODO
 
