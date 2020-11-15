@@ -646,6 +646,10 @@ const Header = (props) => (
 );
 ```
 
+![picture 6](images/974dbf31eef43fd0a2ecf583ea462c103f79e8caa6021193a83dc54a865f1308.png)  
+
+That's better! 😸
+
 TODO:
 
 - [ ] Handle navbar
