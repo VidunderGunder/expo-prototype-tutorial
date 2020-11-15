@@ -9,6 +9,17 @@ What we'll support:
 -  Web (all platforms)
 -  App (iOS and Android)
 
+This is all made possible by [React Native](https://reactnative.dev/) and [Expo](https://expo.io/).
+
+[React Native](https://reactnative.dev/) is a framework for writing applications for iOS and Android. It is native, meaning your app is developed specifically for one platform and can take full advantage of all the devices features.
+
+[Expo](https://expo.io/) is a tool to make [React Native](https://reactnative.dev/) easier - it makes it possible to make only one code that can be used both on iOS, Android and on the web (by using the open source project [React Native for Web](https://github.com/necolas/react-native-web)). You will lose some advanced functionalities with [Expo](https://expo.io/), but [Expo](https://expo.io/) has many upsides that will boost your learning - and you can always eject your project from [Expo](https://expo.io/), if you ever need to!
+
+React Native is working on native support for Windows and Mac, and Expo already supports [wrapping your application](https://docs.expo.io/guides/using-electron/) with [Electron](https://www.electronjs.org/) (although expereimentally), if you should need native desktop support as well.
+
+For simplicity's sake, we will only support Web, iOS and Android here, as that is sufficient in most cases.
+
+
 ## 🚀 Quick Start
 
 If you are a proefficient developer already, just clone this repo and start developing.
@@ -17,17 +28,25 @@ Otherwise, follow the guide below.
 
 ## 🎓 Prerequisites
 
-This is stuff you should know a bit about before we start. Feel free to skip to the [setup](#-setup), but I recommend you to have a basic grasp of these concepts before continuing (but you don't have to).
+This is stuff you should know a bit about before we start. Feel free to skip to the [setup](#-setup), but I recommend you to have a basic grasp of these concepts before continuing (but you don't have to). I have linked to resources for all of them. 
+
+---
+
+_Warning: If you are new to all of this, don't spend too much time on tutorials; just skip through to get a feeling for what they do - you can look them up later when you need to._
+
+_I see too many new developers get stuck in tutorial land, and I would recommend you to learn as you go, as it often the most effective way of learning for most people. You may be different, so do what you feel is right, but keep it in mind._
+
+---
 
 - Terminal ([Windows](https://www.youtube.com/watch?v=jbvqCqb-HJk), [Linux](https://www.suse.com/c/working-command-line-basic-linux-commands/), [Mac](https://www.youtube.com/watch?v=5XgBd6rjuDQ))
-- HTML
-- CSS
-- Javascript
-- Node (JavaScript runtime)
-- NPM
-- Yarn
-- React
-- React Native
+- [HTML](https://www.youtube.com/watch?v=UB1O30fR-EE&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
+- [CSS](https://www.youtube.com/watch?v=yfoY53QXEnI&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
+- [Javascript](https://www.youtube.com/watch?v=2nZiB1JItbY&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
+- [Node](https://www.youtube.com/watch?v=uVwtVBpw7RQ&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
+- [NPM](https://www.youtube.com/watch?v=s70-Vsud9Vk)
+- [Yarn](https://www.youtube.com/watch?v=g9_6KmiBISk&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
+- [React](https://www.youtube.com/watch?v=Tn6-PIqc4UM&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
+- [React Native](https://www.youtube.com/watch?v=6oFuwhIibo4&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
 
 ## 🔧 Setup
 
@@ -35,65 +54,89 @@ We will need an integrated development environment (IDE) for this, and I will us
 
 1. Install [VSCode](https://code.visualstudio.com/)
 1. Install [Node](https://nodejs.org/en/download/)
-2. Install [Yarn](https://yarnpkg.com/lang/en/docs/install/)
-3. Install [Git](https://git-scm.com/)
-4. [Create a GitHub user](https://github.com/join)
-5. Open VSCode
-6. Install VSCode extension
-   1. Open extensions  
+1. Install [Yarn](https://yarnpkg.com/lang/en/docs/install/)
+1. Install [Git](https://git-scm.com/)
+1. [Create a GitHub user](https://github.com/join)
+1. Open VSCode
+1. Install VSCode extension
+    1. Open extensions  
+        ![picture 7](images/b27c35716c2c2d47bb7a315129cb4b2d11137caed957a6504af43f53f94735e2.png)
    
-      ![picture 7](images/b27c35716c2c2d47bb7a315129cb4b2d11137caed957a6504af43f53f94735e2.png)
-   
-   2. Install these extensions
-      - React Native Tools
-      - VS Code ES7 React/Redux/React-Native/JS snippets
-      - Community Material Theme
-      - Material Icon Theme
-      - Bracket Pair Colorizer 2
-7. Open your terminal with one of the following:
-   - NO: <kbd>Ctrl</kbd> + <kbd>Ø</kbd>
-   - US/UK: <kbd>Ctrl</kbd> + <kbd>`</kbd>
-   - Click `View`, `Terminal` in the toolbar  
-    
-      ![picture 1](images/16747341513ca5f8b46e48606d4146f4bae05c3b4dca580817fc56b028bc2d4b.png)  
+    1. Install these extensions
+        - React Native Tools
+        - VS Code ES7 React/Redux/React-Native/JS snippets
+        - Community Material Theme
+        - Material Icon Theme
+        - Bracket Pair Colorizer 2
+1. Open your terminal with one of the following:
+    - NO: <kbd>Ctrl</kbd> + <kbd>Ø</kbd>
+    - US/UK: <kbd>Ctrl</kbd> + <kbd>`</kbd>
+    - Click `View`, `Terminal` in the toolbar  
+        ![picture 1](images/16747341513ca5f8b46e48606d4146f4bae05c3b4dca580817fc56b028bc2d4b.png)  
 
-8.  Install Expo, by pasting the following to the terminal. Press <kbd>Enter</kbd> to run the command:  
+1.  Install Expo, by pasting the following to the termin1l. Press <kbd>Enter</kbd> to run the command:  
 
-      ```shell
-      npm install --global expo-cli
-      ```
+    ```shell
+    npm install --global expo-cli
+    ```
 
-9. Initialize a expo project:  
+1.  Initialize a expo project:  
 
-      ```shell
-      expo init my-project
-      ```
+    ```shell
+    expo init my-project
+    ```
 
    Choose `black` as your template when prompted (it should be the default option).
 
    _Note: The project will be saved where your terminal is located, so change this if you have a preferred place to store coding projects._
 
-10. Start your app in your browser:
+1. Start your app in your browser:
 
-      ```shell
-      yarn web
-      ```
+    ```shell
+    yarn web
+    ```
    
-11. If everything worked correctly you should be met with this:
+1. If everything worked correctly you should be met with this:  
+    ![picture 3](images/ca0f1cdc00529fcaf32e8ee4c085f7387021ac4e823cab40d1e32945e703c9b7.png)  
 
-      ![picture 3](images/ca0f1cdc00529fcaf32e8ee4c085f7387021ac4e823cab40d1e32945e703c9b7.png)  
+    So let's do just that, but first - we want to store our code in the cloud.
 
-   So let's do just that, but first - we want to store our code in the cloud.
+1. Publish your repository
 
-12. Publish your repository
-   - Open the command palette
-   - Use the command `Publish to GitHub`
-   - Confirm the repo name and choose if you want to have it public or private
-   - It is now hosted on your GitHub!
+    - Open the command palette
+    - Use the command `Publish to GitHub`
+    - Confirm the repo name and choose if you want to have it public or private
+    - It is now hosted on your GitHub!
+
+1. Before we start programming, you should open up the browser's developer tools, so you get some feedback. Do one of the following:
+
+    I am using Chrome, so this may differ if you are using another browser.
+
+    - Windows:
+        - Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>
+        - ... or press <kbd>F12</kbd>
+        - ... or right click the web page and choose inspect  
+            ![picture 1](images/90cb4533fd532fc42d28e1321f70fe9455b8eee7021d787cb00858a3fe24db8d.png)  
+    - Mac:
+        - Press <kbd>Command</kbd> + <kbd>Option</kbd> + J</kbd>
+        - ... or right click the web page and choose inspect  
+            ![picture 2](images/94a50925f5922d92cf7dda769c18f3271422b8b66f4da34fd10a80116f26f1be.png)  
+    - Linux:
+        - Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>
+
+    Something like this should pop up:
+
+    ![picture 3](images/c13ccd5054a2d8e9f56a0df563bfb6f8b9d370331761bfbeb8f4c2ba8f4f74ec.png)
+
+    ... and now you're ready to start developing.
 
 ## 🕸️ Create a Web App
 
-Your app starts inn App.js, which will look something like this:
+Your app starts inn App.js*,
+
+![picture 4](images/7c8e918208c3769dec6ed687b06e271a8fd98737faf29ef6f8473f19a7d35c8e.png)  
+
+which will look something like this:
 
 ```js
 // App.js
@@ -121,7 +164,7 @@ const styles = StyleSheet.create({
 
 ```
 
-_Note: I will rename the file to App.jsx, because of personal preference. Feel free to do the same - just remember to restart expo, by terminating it in the console (Click on the terminal, <kbd>Ctrl</kbd> + <kbd>C</kbd>) and running `yarn web` afterwards._
+_*I will rename the file to App.jsx, because of personal preference. Feel free to do the same - just remember to restart expo, by terminating it in the console (Click on the terminal, <kbd>Ctrl</kbd> + <kbd>C</kbd>) and running `yarn web` afterwards._
 
 Let's minimalize this as much as possible.
 
@@ -484,11 +527,11 @@ TODO
 
       ![picture 2](images/4f3e2d6e482dfd2039f427134abfedde069bfd236c233297665782cbb5942d07.png)  
 
-   1. Open the command palette and use the command `Git: Clone`
-   1. Paste the URL
-   1. Choose where you want to store it
+   2. Open the command palette and use the command `Git: Clone`
+   3. Paste the URL
+   4. Choose where you want to store it
       _Note: Cloning it will create a new folder with the project name where you choose to place it, so there is no need to make a new dedicated folder for it manually._
-   2. Say yes to open the project in its own workspace
+   5. Say yes to open the project in its own workspace
 
 - Right click the VSCode shortcut to open recently used projects quickly  
 
