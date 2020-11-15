@@ -274,6 +274,7 @@ Restart Expo by terminating it in the console (Click on the terminal, <kbd>Ctrl<
 Add a card and some text from UI Kitten to our app. We also have to wrap our app with UI Kittens ApplicationProvider.
 
 ```js
+// App.jsx
 import React from "react";
 import { ImageBackground } from "react-native";
 import background from "./assets/kitten.jpg";
@@ -305,6 +306,7 @@ export default () => {
 Add a header to your card, so you can display the app name and optionally a tagline or something of the sort.
 
 ```js
+// App.jsx
 import React from "react";
 import { ImageBackground, View } from "react-native";
 import background from "./assets/kitten.jpg";
@@ -344,6 +346,7 @@ const Header = (props) => (
 Most often an app needs input from a user, so let's add a tiny form.
 
 ```js
+// App.jsx
 import React from "react";
 import { ImageBackground, View } from "react-native";
 import background from "./assets/kitten.jpg";
@@ -407,6 +410,7 @@ There are endless ways of doing this, so I will make it as simple as possible an
 If you are not familiar with what's going on below, just copy-paste the whole thing and learn those concepts later by watching the playlist.
 
 ```js
+// App.jsx
 import React, { useState } from "react";
 import { ImageBackground, View } from "react-native";
 import background from "./assets/kitten.jpg";
@@ -549,6 +553,7 @@ Thinking about it, the card was supposed to be centered as well. We'll have to f
 `How many cats do you want?` does work, but should really have a number pad as the default input. Seems like I didn't do it right when writing the web app. I wrote `number-pad="numeric"`, but it should really be `keyboardType="number-pad"` - woopsies! 🤷‍♂️
 
 ```js
+// App.jsx
 import React, { useState } from "react";
 import { ImageBackground, View } from "react-native";
 import background from "./assets/kitten.jpg";
