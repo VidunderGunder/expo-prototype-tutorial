@@ -34,7 +34,7 @@ This is stuff you should know a bit about before we start. Feel free to skip to 
 
 _Warning: If you are new to all of this, don't spend too much time on tutorials; just skip through to get a feeling for what they do - you can look them up later when you need to._
 
-_I see too many new developers get stuck in tutorial land, and I would recommend you to learn as you go, as it often the most effective way of learning for most people. You may be different, so do what you feel is right, but keep it in mind._
+_I see too many new developers get stuck in tutorial land, and I would recommend you to learn as you go, as it's often the most effective way of learning for most people. You may be different, so do what you feel is right, but keep it in mind._
 
 ---
 
