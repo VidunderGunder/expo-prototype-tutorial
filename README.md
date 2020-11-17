@@ -1,8 +1,12 @@
-# App and Web in one with [Expo](https://expo.io/)
+# App and Web with [Expo](https://expo.io/)
 
 ![Expo](images/Expo.png)
 
-Let's make an application from start to finish!
+Let's create an application prototype from start to finish!
+
+What we'll make:
+
+- A calculator that calculates how much you love cats 🐱
 
 What we'll support:
 
@@ -15,14 +19,27 @@ This is all made possible by [React Native](https://reactnative.dev/) and [Expo]
 
 [Expo](https://expo.io/) is a tool to make [React Native](https://reactnative.dev/) easier - it makes it possible to make only one code that can be used both on iOS, Android and on the web (by using the open source project [React Native for Web](https://github.com/necolas/react-native-web)). You will lose some advanced functionalities with [Expo](https://expo.io/), but [Expo](https://expo.io/) has many upsides that will boost your learning - and you can always eject your project from [Expo](https://expo.io/), if you ever need to!
 
-React Native is working on native support for Windows and Mac, and Expo already supports [wrapping your application](https://docs.expo.io/guides/using-electron/) with [Electron](https://www.electronjs.org/) (although expereimentally), if you should need native desktop support as well.
+React Native is working on native support for Windows and Mac, and Expo already supports [wrapping your application](https://docs.expo.io/guides/using-electron/) with [Electron](https://www.electronjs.org/) (although experimentally), if you should need native desktop support as well.
 
 For simplicity's sake, we will only support Web, iOS and Android here, as that is sufficient in most cases.
 
+## Table of contents <!-- omit in toc -->
+- [App and Web with Expo](#app-and-web-with-expo)
+  - [🚀 Quick Start](#-quick-start)
+  - [🎓 Prerequisites](#-prerequisites)
+  - [🔧 Setup](#-setup)
+  - [🕸️ Create a Web App](#️-create-a-web-app)
+  - [📱 iOS and Android](#-ios-and-android)
+  - [✨ Polishing](#-polishing)
+  - [🌐 Publish to web *- for free!*](#-publish-to-web---for-free)
+  - [📲 Publish app for testing *- for free!*](#-publish-app-for-testing---for-free)
+  - [💲 Publish to app stores *- not free...*](#-publish-to-app-stores---not-free)
+  - [🤔 What's next?](#-whats-next)
+  - [💡 Tips and Tricks](#-tips-and-tricks)
 
 ## 🚀 Quick Start
 
-If you are a proefficient developer already, just clone this repo and start developing.
+If you are a proficient developer already, clone this repo and start developing, or take a look at [Expo's documentation](https://docs.expo.io/).
 
 Otherwise, follow the guide below.
 
@@ -43,8 +60,7 @@ _I see too many new developers get stuck in tutorial land, and I would recommend
 - [CSS](https://www.youtube.com/watch?v=yfoY53QXEnI&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
 - [Javascript](https://www.youtube.com/watch?v=2nZiB1JItbY&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
 - [Node](https://www.youtube.com/watch?v=uVwtVBpw7RQ&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
-- [NPM](https://www.youtube.com/watch?v=s70-Vsud9Vk)
-- [Yarn](https://www.youtube.com/watch?v=g9_6KmiBISk&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
+- [NPM](https://www.youtube.com/watch?v=s70-Vsud9Vk) and [Yarn](https://www.youtube.com/watch?v=g9_6KmiBISk&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
 - [React](https://www.youtube.com/watch?v=Tn6-PIqc4UM&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
 - [React Native](https://www.youtube.com/watch?v=6oFuwhIibo4&list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0)
 
@@ -90,7 +106,7 @@ We will need an integrated development environment (IDE), and I will use VSCode.
 9. Install Expo, by pasting the following to the terminal. Press <kbd>Enter</kbd> to run the command:  
 
     ```shell
-    npm install --global expo-cli
+    yarn global add expo-cli
     ```
 
 10. Initialize a expo project:  
@@ -179,7 +195,7 @@ const styles = StyleSheet.create({
 
 _*I will rename the file to App.jsx, because of personal preference. Feel free to do the same - just remember to restart Expo, by terminating it in the console (Click on the terminal, <kbd>Ctrl</kbd> + <kbd>C</kbd>) and running `yarn web` afterwards._
 
-Let's minimalize this as much as possible.
+Let's reduce this as much as possible.
 
 ```js
 // App.jsx
@@ -228,7 +244,7 @@ Wow. Amazing.
 
 Let's hide that cute cat behind a card where we can sketch out our actual app.
 
-We could reinvent the wheel here, and design all our components ourselves - but I would almost exclusively recommend using a library or framework for your UI, as you will save an enourmous amount of time and effort.
+We could reinvent the wheel here, and design all our components ourselves - but I would almost exclusively recommend using a library or framework for your UI, as you will save an enormous amount of time and effort.
 
 I will use [UI Kitten](https://akveo.github.io/react-native-ui-kitten/) for this project.
 
@@ -384,7 +400,7 @@ export default () => {
           disabled
         >
           <Input
-            label="Describe your favourite cat"
+            label="Describe your favorite cat"
             placeholder="Type here..."
           />
           <Separator />
@@ -452,7 +468,7 @@ export default () => {
           disabled
         >
           <Input
-            label="Describe your favourite cat"
+            label="Describe your favorite cat"
             placeholder="Type here..."
             value={fav}
             onChangeText={(text) => {
@@ -513,9 +529,9 @@ Congrats - we now have a functioning web app! 😻
 
 This level is sufficient for most prototypes, and you can be safe knowing that your code will be useable (with some tweaks) on mobile as well.
 
-Cool, cool.
+If you don't need an app yet, skip ahead to [🌐 Publish to web *- for free!*](#-publish-to-web---for-free).
 
-## 🍎🤖 iOS and Android
+## 📱 iOS and Android
 
 Install the [Expo Development Client](https://expo.io/tools#client) on your mobile device of choice.
 
@@ -545,9 +561,11 @@ If you can't connect directly, you will have to install an emulator for iOS (Mac
 - [iOS](https://docs.expo.io/workflow/ios-simulator/)  
 - [Android](https://docs.expo.io/workflow/android-studio-emulator/)
 
+If nothing works, just read on and try again on another network.
+
 ---
 
-If you got your device connected, let's test the app!
+Now onto testing the app!
 
 I'll just press the calculate button...
 
@@ -559,7 +577,7 @@ That text is supposed to be center aligned. That probably means that `margin: "a
 
 Thinking about it, the card was supposed to be vertically centered on the screen as well. We'll have to fix that by using [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
-`Describe your favourite cat` seems to work ok.
+`Describe your favorite cat` seems to work ok.
 
 `How many cats do you want?` does work, but should really have a number pad as the default input. Seems like I didn't do it right when writing the web app. I wrote `number-pad="numeric"`, but it should really be `keyboardType="number-pad"` - woopsies! 🤷‍♂️
 
@@ -602,7 +620,7 @@ export default () => {
           disabled
         >
           <Input
-            label="Describe your favourite cat"
+            label="Describe your favorite cat"
             placeholder="Type here..."
             value={fav}
             onChangeText={(text) => {
@@ -767,7 +785,51 @@ Here you can also add information about your app. Everything I want is here, but
 }
 ```
 
-## 🌐 Publish for testing
+## 🌐 Publish to web *- for free!*
+
+Connect your GitHub-user to [Vercel](https://vercel.com/login?next=%2Fdashboard).
+
+Install [Vercel CLI](https://vercel.com/download) (using the terminal).
+
+```shell
+yarn global add vercel
+```
+
+Optimize assets.
+
+```shell
+yarn global add sharp-cli
+npx expo-optimize
+```
+
+Build the web application.
+
+```shell
+expo build:web
+```
+
+Go into the web build.
+
+```shell
+cd web-build
+```
+
+Deploy to Vercel.
+
+```shell
+vercel
+```
+
+Follow the instructions. If it's the first time you use Vercel, you'll have to run the command `vercel` again after you're logged in.
+
+Press <kbd>enter</kbd> for *all* prompts. You don't have to input anything.
+
+The final command should give you the url to visit your webpage.
+
+If it doesn't work or you want to adjust hosting settings, visit your [Vercel dashboard](https://vercel.com/dashboard). You'll find everything you need to administer your web page there.
+
+
+## 📲 Publish app for testing *- for free!*
 
 [Create an Expo account](https://expo.io/signup).
 
@@ -791,9 +853,9 @@ Click on your project name
 
 ![picture 4](images/45a20c4a5ec03202a3b4783b0bbaa07a3088b582b4011f018345cdd6a04c0368.png)  
 
-There you should be presented with the information needed to test your app. Send the link in the address bar to your testers. 
+There you should be presented with the information needed to test your app on mobile. Send the link in the address bar to your testers.
 
-## 💲 Publish to app stores
+## 💲 Publish to app stores *- not free...*
 
 This is outside the scope of this tutorial, as we are only creating a prototype.
 
@@ -815,7 +877,7 @@ We did web first in this example to make it easier to follow along, but when you
 
 An emulator is great, if you want to set that up for [Android](https://docs.expo.io/workflow/android-studio-emulator/) or [iOS](https://docs.expo.io/workflow/android-studio-emulator/) (Mac only 💔), but it's not the same as having a device in your hand.
 
-If something technically works on mobile and looks good, it will usually work on the web (except native features obviously) and scale up to a bigger screen. If you want to save time, it's often a good idea to design your app [mobile first](https://medium.com/@Vincentxia77/what-is-mobile-first-design-why-its-important-how-to-make-it-7d3cf2e29d00). It's always harder to do desktop first if you want cross-platform compatibility.
+If something technically works on mobile and looks good, it will usually work on the web (except native features obviously) and scale up to a bigger screen. If you want to save time, it's often a good idea to design your app [mobile first](https://medium.com/@Vincentxia77/what-is-mobile-first-design-why-its-important-how-to-make-it-7d3cf2e29d00). It's always harder to do desktop first when you want cross-platform compatibility.
 
 If you want to clone this repo, this is how to do so:
    1. Copy the GitHub-repo URL (the HTTPS one)

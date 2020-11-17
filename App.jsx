@@ -35,7 +35,7 @@ export default () => {
           disabled
         >
           <Input
-            label="Describe your favourite cat"
+            label="Describe your favorite cat"
             placeholder="Type here..."
             value={fav}
             onChangeText={(text) => {
