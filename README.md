@@ -809,7 +809,13 @@ Good luck!
 
 ## 💡 Tips and Tricks
 
-- Clone a project (this one for example)
+We did web first in this example to make it easier to follow along, but when you're developing, it may be a good idea to have a live version of your app open on iOS or Android (both preferably), so that you catch any errors and special cases as they pop up.
+
+An emulator is great, if you want to set that up for [Android](https://docs.expo.io/workflow/android-studio-emulator/) or [iOS](https://docs.expo.io/workflow/android-studio-emulator/) (Mac only 💔), but it's not the same as having a device in your hand.
+
+If something technically works on mobile and looks good, it will usually work on the web (except native features obviously) and scale up to a bigger screen. If you want to save time, it's often a good idea to design your app [mobile first](https://medium.com/@Vincentxia77/what-is-mobile-first-design-why-its-important-how-to-make-it-7d3cf2e29d00). It's always harder to do desktop first if you want cross-platform compatibility.
+
+If you want to clone this repo, this is how to do so:
    1. Copy the GitHub-repo URL (the HTTPS one)
 
       ![picture 2](images/4f3e2d6e482dfd2039f427134abfedde069bfd236c233297665782cbb5942d07.png)  
