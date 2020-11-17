@@ -873,6 +873,19 @@ Enter a *short* description of what you did
 
 ![picture 7](images/703ad19eb58f302c3f3d2baf52de18a32bd139588ffc405d50f53c431702f61c.png)  
 
+Stage all your changes
+
+![picture 8](images/d2fa2ba7107cf529e3109b146c6b824c1eaa402c81d4185f21ea577990a0800e.png)  
+
+Commit all your staged changes
+
+![picture 12](images/bc4b857b48c946e077662034024d7447f86a2c5f2aca021c57b7dc2eaf779d55.png)  
+
+Push your changes
+
+![picture 9](images/0c7f73d6644416994d00cce55d4286970b6644764ef74145be3da59e25d53650.png)  
+
+There are shortcuts for doing all of this, but as there are so many different ways and operating system, I leave it up to you to figure out faster ways of doing this to your preference on your system.
 
 ## 🤔 What's next?
 
