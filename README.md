@@ -787,34 +787,34 @@ Here you can also add information about your app. Everything I want is here, but
 
 ## 🌐 Publish to web *- for free!*
 
-Connect your GitHub-user to [Vercel](https://vercel.com/login?next=%2Fdashboard).
+Connect your GitHub-user to [Vercel](https://vercel.com/login?next=%2Fdashboard)
 
-Install [Vercel CLI](https://vercel.com/download) (using the terminal).
+Install [Vercel CLI](https://vercel.com/download) (using the terminal)
 
 ```shell
 yarn global add vercel
 ```
 
-Optimize assets.
+Optimize assets
 
 ```shell
 yarn global add sharp-cli
 npx expo-optimize
 ```
 
-Build the web application.
+Build the web application
 
 ```shell
 expo build:web
 ```
 
-Go into the web build.
+Go into the web build
 
 ```shell
 cd web-build
 ```
 
-Deploy to Vercel.
+Deploy to Vercel
 
 ```shell
 vercel
@@ -839,7 +839,7 @@ Run the following in the terminal:
 expo publish
 ```
 
-Login when prompted.
+Login when prompted
 
 Go to [Expo](https://expo.io/)
 
