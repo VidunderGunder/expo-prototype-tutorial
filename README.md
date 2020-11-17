@@ -805,7 +805,9 @@ If you liked this and want to learn more about web development, check out the [Z
 
 Other than that, you can go ahead and make an app. Remember that Google is your friend, as am I, so ask either one of us if you need any help.
 
-Good luck! 
+I'm available for help at [Facebook](https://www.facebook.com/kristian.kramas).
+
+Good luck!
 
 ## 💡 Tips and Tricks
 
