@@ -34,6 +34,7 @@ For simplicity's sake, we will only support Web, iOS and Android here, as that i
   - [🌐 Publish to web *- for free!*](#-publish-to-web---for-free)
   - [📲 Publish app for testing *- for free!*](#-publish-app-for-testing---for-free)
   - [💲 Publish to app stores *- not free...*](#-publish-to-app-stores---not-free)
+  - [💾 Save and push changes to GitHub](#-save-and-push-changes-to-github)
   - [🤔 What's next?](#-whats-next)
   - [💡 Tips and Tricks](#-tips-and-tricks)
 
@@ -82,10 +83,9 @@ We will need an integrated development environment (IDE), and I will use VSCode.
         - React Native Tools
         - VS Code ES7 React/Redux/React-Native/JS snippets
         - Bracket Pair Colorizer 2
-        - Community Material Theme
-          - I use the Palenight High Contrast variant
-        - Material Icon Theme 
-    3. Setup theme and icons  
+        - Community Material Theme (very optional)
+        - Material Icon Theme (very optional)
+    3. Setup theme and icons (very optional)  
         _The following only applies if you weren't prompted automatically_
         - Open the command palette
         - Run the command `Preferences: Color Theme`
@@ -860,6 +860,19 @@ There you should be presented with the information needed to test your app on mo
 This is outside the scope of this tutorial, as we are only creating a prototype.
 
 Expo offers [documentation](https://docs.expo.io/distribution/uploading-apps/) on how you can upload apps to the official app stores, when you and your app is ready.
+
+## 💾 Save and push changes to GitHub
+
+Great work! Now you should make sure everything is saved and push the changes to your repository.
+
+Enter the source control tab
+
+![picture 6](images/ad3c04dd3f1f83e3a3652f662910f364dda3fdf981cff164b27ff67ce7108fd3.png)  
+
+Enter a *short* description of what you did
+
+![picture 7](images/703ad19eb58f302c3f3d2baf52de18a32bd139588ffc405d50f53c431702f61c.png)  
+
 
 ## 🤔 What's next?
 
