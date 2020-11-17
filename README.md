@@ -679,7 +679,7 @@ In your files there is a folder named 📁 `assets`, where you'll find some imag
 - `favicon.png`  
     Icon shown on the web
 
-_Note that there are stict guidelines to follow if you want to publish your app to a store, but we won't dive into that. If you're interested, you can read more [here](https://docs.expo.io/guides/app-icons/)._
+_Note that there are [guidelines](https://docs.expo.io/guides/app-icons/) if you want to publish your app to a store, but we won't dive into that._
 
 Delete `splash.png`, `icon.png`, `adaptive-icon.png` and `favicon.png`.
 
