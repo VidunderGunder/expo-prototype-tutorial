@@ -867,6 +867,8 @@ If you liked this and want to learn more about web development, check out the [Z
 
 Other than that, you can go ahead and make an app. Remember that Google is your friend, as am I, so ask either one of us if you need any help.
 
+If you need some more advanced functionality, like users and data storage, you might want to check out Google's [Firebase](https://firebase.google.com/). It's by far the most powerful backend tool for small startups in my opinion, and will scale like a singing reptile on a diet.
+
 I'm available for help at [Facebook](https://www.facebook.com/kristian.kramas).
 
 Good luck!
@@ -877,7 +879,7 @@ We did web first in this example to make it easier to follow along, but when you
 
 An emulator is great, if you want to set that up for [Android](https://docs.expo.io/workflow/android-studio-emulator/) or [iOS](https://docs.expo.io/workflow/android-studio-emulator/) (Mac only 💔), but it's not the same as having a device in your hand.
 
-If something technically works on mobile and looks good, it will usually work on the web (except native features obviously) and scale up to a bigger screen. If you want to save time, it's often a good idea to design your app [mobile first](https://medium.com/@Vincentxia77/what-is-mobile-first-design-why-its-important-how-to-make-it-7d3cf2e29d00). It's always harder to do desktop first when you want cross-platform compatibility.
+If something technically works on mobile and looks good, it will usually work on the web (except native features obviously) and scale great up to a bigger screen. If you want to save time, it's often a good idea to design your app [mobile first](https://medium.com/@Vincentxia77/what-is-mobile-first-design-why-its-important-how-to-make-it-7d3cf2e29d00).
 
 If you want to clone this repo, this is how to do so:
    1. Copy the GitHub-repo URL (the HTTPS one)
