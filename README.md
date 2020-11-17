@@ -50,39 +50,50 @@ _I see too many new developers get stuck in tutorial land, and I would recommend
 
 ## 🔧 Setup
 
-We will need an integrated development environment (IDE) for this, and I will use VSCode for this tutorial. 
+We will need an integrated development environment (IDE), and I will use VSCode. I recommend you do the same, as it will be easier to follow along, but if you are familiar with another IDE I won't stop you.
 
 1. Install [VSCode](https://code.visualstudio.com/)
-1. Install [Node](https://nodejs.org/en/download/)
-1. Install [Yarn](https://yarnpkg.com/lang/en/docs/install/)
-1. Install [Git](https://git-scm.com/)
-1. [Create a GitHub user](https://github.com/join)
-1. Open VSCode
-1. Install VSCode extension (optional, but recommended)
+2. Install [Node](https://nodejs.org/en/download/)
+3. Install [Yarn](https://yarnpkg.com/lang/en/docs/install/)
+4. Install [Git](https://git-scm.com/)
+5. [Create a GitHub user](https://github.com/join)
+6. Open VSCode
+7. Install VSCode extension (optional, but recommended)
     1. Open extensions  
         ![picture 7](images/b27c35716c2c2d47bb7a315129cb4b2d11137caed957a6504af43f53f94735e2.png)
-    1. Install these extensions
+    2. Install these extensions
         - Prettier
         - React Native Tools
         - VS Code ES7 React/Redux/React-Native/JS snippets
         - Bracket Pair Colorizer 2
         - Community Material Theme
           - I use the Palenight High Contrast variant
-        - Material Icon Theme
+        - Material Icon Theme 
+    3. Setup theme and icons  
+        _The following only applies if you weren't prompted automatically_
+        - Open the command palette
+        - Run the command `Preferences: Color Theme`
+            ![picture 1](images/b7b486319d909dbe3d8fd60d7ba2e9171f3e71df22dbe3b39574025d7600e975.png)  
+        - Choose a Community Material Theme of your liking (I use Palenight High Contrast)
+        - Open the command palette
+        - Run the command `Preferences: File Icon Theme`
+            ![picture 2](images/18a94da6249f537a78ba2210036e7d142cdb3588859c9f35acffae2f4e425c87.png)  
+        - Choose `Material Icon Theme`
 
-1. Open your terminal with one of the following:
+
+8. Open your terminal with one of the following:
     - NO: <kbd>Ctrl</kbd> + <kbd>Ø</kbd>
     - US/UK: <kbd>Ctrl</kbd> + <kbd>`</kbd>
     - Click `View`, `Terminal` in the toolbar  
         ![picture 1](images/16747341513ca5f8b46e48606d4146f4bae05c3b4dca580817fc56b028bc2d4b.png)  
 
-1. Install Expo, by pasting the following to the terminal. Press <kbd>Enter</kbd> to run the command:  
+9. Install Expo, by pasting the following to the terminal. Press <kbd>Enter</kbd> to run the command:  
 
     ```shell
     npm install --global expo-cli
     ```
 
-1. Initialize a expo project:  
+10. Initialize a expo project:  
 
     ```shell
     expo init my-project
@@ -92,25 +103,25 @@ We will need an integrated development environment (IDE) for this, and I will us
 
    _Note: The project will be saved where your terminal is located, so change this if you have a preferred place to store coding projects._
 
-1. Start your app in your browser:
+11. Start your app in your browser:
 
     ```shell
     yarn web
     ```
    
-1. If everything worked correctly you should be met with this:  
+12. If everything worked correctly you should be met with this:  
     ![picture 3](images/ca0f1cdc00529fcaf32e8ee4c085f7387021ac4e823cab40d1e32945e703c9b7.png)  
 
     So let's do just that, but first - we want to store our code in the cloud.
 
-1. Publish your repository
+13. Publish your repository
 
     - Open the command palette
     - Use the command `Publish to GitHub`
     - Confirm the repo name and choose if you want to have it public or private
     - It is now hosted on your GitHub!
 
-1. Before we start programming, you should open up the browser's developer tools, so you get some feedback. Do one of the following:
+14. Before we start programming, you should open up the browser's developer tools, so you get some feedback. Do one of the following:
 
     I am using Chrome, so this may differ if you are using another browser.
 
@@ -506,7 +517,7 @@ Cool, cool.
 
 ## 🍎🤖 iOS and Android
 
-Install the [Expo Development Client](https://expo.io/tools#client) on your device.
+Install the [Expo Development Client](https://expo.io/tools#client) on your mobile device of choice.
 
 ![picture 1](images/08ec57965f39030326e5dcd2d7b0d6329c3a98bb49da25c1e9fdd0e8b12e3a06.png)  
 
@@ -546,7 +557,7 @@ Uh-oh 😓
 
 That text is supposed to be center aligned. That probably means that `margin: "auto"` doesn't center things on the app. That can be fixed by using `textAlign: "center"` instead.
 
-Thinking about it, the card was supposed to be centered as well. We'll have to fix that by using [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+Thinking about it, the card was supposed to be vertically centered on the screen as well. We'll have to fix that by using [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
 `Describe your favourite cat` seems to work ok.
 
@@ -655,18 +666,108 @@ const Header = (props) => (
 
 That's better! 😸
 
-TODO:
-
-- [ ] Handle navbar
-
 ## ✨ Polishing
 
-TODO:
+In your files there is a folder named 📁 `assets`, where you'll find some images other than our background:
 
-- [ ] Icons and splash screen
-- [ ] App info
+- `splash.png`  
+    The opening/loading screen of your application
+- `icon.png`  
+    Icon used on iOS, Android and on Expo
+- `adaptive-icon.png`  
+    Two layered icon used on Android, which will be used by the OS for things like animations.
+- `favicon.png`  
+    Icon shown on the web
 
-## 🌐 Publish
+_Note that there are stict guidelines to follow if you want to publish your app to a store, but we won't dive into that. If you're interested, you can read more [here](https://docs.expo.io/guides/app-icons/)._
+
+Delete `splash.png`, `icon.png`, `adaptive-icon.png` and `favicon.png`.
+
+To simplify and save some time, we will use the same image for all of them.
+
+Find an icon [PixaBay](https://pixabay.com/)
+
+I used [this](https://pixabay.com/vectors/kitten-head-kitty-feline-domestic-576502/), and named it `logo.png`.
+
+_Expo wants PNG-files, so if you find a JPG-only image, use [JPGtoPNG](https://jpg2png.com/) to convert it._
+
+Put the image in the 📁 `assets`-folder.
+
+Open up the file `app.json`, so we can tell Expo we have a new image for everything. Change every image from 📁 `assets` to our new image.
+
+This is how it will look for me and my `logo.png`:
+
+```json
+{
+  "expo": {
+    "name": "expo-prototype-tutorial",
+    "slug": "expo-prototype-tutorial",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/logo.png"
+    },
+    "description": ""
+  }
+}
+```
+
+Here you can also add information about your app. Everything I want is here, but there's no description - so I'll add that.
+
+```json
+{
+  "expo": {
+    "name": "expo-prototype-tutorial",
+    "slug": "expo-prototype-tutorial",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/logo.png"
+    },
+    "description": "A kitty love calculator for educational purposes"
+  }
+}
+```
+
+## 🌐 Publish for testing
 
 [Create an Expo account](https://expo.io/signup).
 
@@ -678,14 +779,33 @@ expo publish
 
 Login when prompted.
 
-TODO:
+Go to [Expo](https://expo.io/)
 
-- [ ] App Store
-- [ ] Play Store
+Login (if you haven't already)
+
+Go to your projects
+
+![picture 3](images/e8ec7155af89eda06b1e82cfa44bb1e50342a6f7c402ad23cc229814e37da9be.png)  
+
+Click on your project name
+
+![picture 4](images/45a20c4a5ec03202a3b4783b0bbaa07a3088b582b4011f018345cdd6a04c0368.png)  
+
+There you should be presented with the information needed to test your app. Send the link in the address bar to your testers. 
+
+## 💲 Publish to app stores
+
+This is outside the scope of this tutorial, as we are only creating a prototype.
+
+Expo offers [documentation](https://docs.expo.io/distribution/uploading-apps/) on how you can upload apps to the official app stores, when you and your app is ready.
 
 ## 🤔 What's next?
 
-TODO
+If you liked this and want to learn more about web development, check out the [Zero to Fullstack Hero](https://www.youtube.com/playlist?list=PLzWjrc7MKKxyffsM7YTBnogYpBh_QUIO0).
+
+Other than that, you can go ahead and make an app. Remember that Google is your friend, as am I, so ask either one of us if you need any help.
+
+Good luck! 
 
 ## 💡 Tips and Tricks
 
@@ -699,7 +819,3 @@ TODO
    4. Choose where you want to store it
       _Note: Cloning it will create a new folder with the project name where you choose to place it, so there is no need to make a new dedicated folder for it manually._
    5. Say yes to open the project in its own workspace
-
-- Right click the VSCode shortcut to open recently used projects quickly  
-
-   ![picture 1](images/ca5c3e98b60cc746f467d9a4f2d0b22ad2f5bf06d007ef0557962d8db8ea5c50.png)  
