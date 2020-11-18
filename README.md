@@ -246,7 +246,7 @@ Let's hide that cute cat behind a card where we can sketch out our actual app.
 
 We could reinvent the wheel here, and design all our components ourselves - but I would almost exclusively recommend using a library or framework for your UI, as you will save an enormous amount of time and effort.
 
-I will use [UI Kitten](https://akveo.github.io/react-native-ui-kitten/) for this project.
+I will use [UI Kitten](https://akveo.github.io/react-native-ui-kitten/), for obvious reasons. 🐈
 
 First, we need to install it, so open up a new terminal.
 
