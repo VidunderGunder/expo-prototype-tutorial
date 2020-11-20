@@ -24,6 +24,8 @@ React Native is working on native support for Windows and Mac, and Expo already 
 
 For simplicity's sake, we will only support Web, iOS and Android here, as that is sufficient in most cases.
 
+Huge thanks to Astrid Lye Moum for valuable feedback!
+
 ## Table of contents <!-- omit in toc -->
 - [🚀 Quick Start](#-quick-start)
 - [🎓 Prerequisites](#-prerequisites)
