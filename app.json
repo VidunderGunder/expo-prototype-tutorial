@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-prototype-tutorial",
-    "slug": "expo-prototype-tutorial",
+    "name": "catculator",
+    "slug": "catculator",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logo.png",

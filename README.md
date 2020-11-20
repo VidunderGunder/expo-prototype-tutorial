@@ -6,7 +6,7 @@ Let's create an application prototype from start to finish!
 
 What we'll make:
 
-- A calculator that calculates how much you love cats 🐱
+- A calculator that calculates how much you love cats 🐱 You guessed right, a **Catculator™**
 
 
 What we'll support:
@@ -135,10 +135,10 @@ _Note: If you know your way around an IDE, Git, GitHub and developer tools, you 
 
     _Note: The project will be saved where your terminal is located, so change this if you have a preferred place to store coding projects._
 
-    The last argument, `expo-prototype-tutorial` , is the project name - feel free to change it.
+    The last argument, `catculator` , is the project name - feel free to change it.
 
     ```shell
-    expo init expo-prototype-tutorial
+    expo init catculator
     ```
 
     Choose `blank` as your template when prompted (it should be the default option), by pressing <kbd>Enter</kbd>
@@ -444,13 +444,15 @@ export default () => {
 
 const Header = (props) => (
   <View {...props}>
-    <Text category="h6">Kitten App</Text>
+    <Text category="h6">Catculator</Text>
     <Text category="s1">Purr purr</Text>
   </View>
 );
 ```
 
 <img src="images/1728522c5ef048d6c4c4c1ee5df5998939a64eb26fb3897d77a674cd08163558.png" />  
+
+_Yes, I know it says **Kitten App** in the pictures. I didn't get the very official trademark **Catculator™** certified by a [qualified lawyer ](https://upload.wikimedia.org/wikipedia/commons/4/45/Cat_lawyer.jpg) before the tutorial was complete. Will I redo all the pictures? Nopetiy-nope._
 
 Most often an app needs input from a user, so let's add a tiny form.
 
@@ -504,7 +506,7 @@ const Separator = () => {
 
 const Header = (props) => (
   <View {...props}>
-    <Text category="h6">Kitten App</Text>
+    <Text category="h6">Catculator</Text>
     <Text category="s1">Purr purr</Text>
   </View>
 );
@@ -599,7 +601,7 @@ const Separator = () => {
 
 const Header = (props) => (
   <View {...props}>
-    <Text category="h6">Kitten App</Text>
+    <Text category="h6">Catculator</Text>
     <Text category="s1">Purr purr</Text>
   </View>
 );
@@ -756,7 +758,7 @@ const Separator = () => {
 
 const Header = (props) => (
   <View {...props}>
-    <Text category="h6">Kitten App</Text>
+    <Text category="h6">Catculator</Text>
     <Text category="s1">Purr purr</Text>
   </View>
 );
@@ -800,8 +802,8 @@ This is how it will look for me and my `logo.png`:
 ```json
 {
   "expo": {
-    "name": "expo-prototype-tutorial",
-    "slug": "expo-prototype-tutorial",
+    "name": "catculator",
+    "slug": "catculator",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logo.png",
@@ -836,8 +838,8 @@ Here you can also add information about your app. Everything I want is here, but
 ```json
 {
   "expo": {
-    "name": "expo-prototype-tutorial",
-    "slug": "expo-prototype-tutorial",
+    "name": "catculator",
+    "slug": "catculator",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logo.png",

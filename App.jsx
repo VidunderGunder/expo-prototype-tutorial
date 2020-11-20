@@ -89,7 +89,7 @@ const Separator = () => {
 
 const Header = (props) => (
   <View {...props}>
-    <Text category="h6">Kitten App</Text>
+    <Text category="h6">Catculator</Text>
     <Text category="s1">Purr purr</Text>
   </View>
 );
