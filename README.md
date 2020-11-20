@@ -1,6 +1,6 @@
 # App and Web with [Expo](https://expo.io/) <!-- omit in toc -->
 
-<img src="images/1d67286943ea7ff6f162dd6008897fa493d6713bcfffef37ebae7de41d7a0eb5.png" />  
+<img src="images/7a80253aa6176407709dacea6e8f38760c031c9b31e782ebe7a44b332b354665.png" />  
 
 Let's create an application prototype from start to finish!
 
