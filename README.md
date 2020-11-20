@@ -6,7 +6,9 @@ Let's create an application prototype from start to finish!
 
 What we'll make:
 
-- A calculator that calculates how much you love cats 🐱 You guessed right, a **Catculator™**
+- A calculator that calculates how much you love cats 🐱  
+    In other words...  
+    a **Catculator™**
 
 
 What we'll support:
@@ -75,10 +77,10 @@ _Note: If you know your way around an IDE, Git, GitHub and developer tools, you 
 
 1. Make sure you have a popular and modern browser set as default
 
-   - [Chrome](https://www.google.com/chrome/) (What I'll use)
-   - [Edge](https://www.microsoft.com/edge) (the new one with the twirly logo)
-   - [Firefox](https://www.mozilla.org/firefox/new)
-   - Safari
+    - [Chrome](https://www.google.com/chrome/) (What I'll use)
+    - [Edge](https://www.microsoft.com/edge) (the new one with the twirly logo)
+    - [Firefox](https://www.mozilla.org/firefox/new)
+    - Safari
    
 2. Install [VSCode](https://code.visualstudio.com/)
 3. Install [Node](https://nodejs.org/en/download/)
