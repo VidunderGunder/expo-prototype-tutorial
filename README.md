@@ -91,6 +91,8 @@ _Note: If you know your way around an IDE, Git, GitHub and developer tools, you 
         <img src="images/5656a524e4f9bc0f958b07a92d420a538417a784d80a24be1bf2e281c2307b4d.png" />  
     I usually leave all other options to default
 
+_Now might be a good time to restart your computer. You may not need to, but it is always a good idea after installing so many tools._
+
 6. [Create a GitHub user](https://github.com/join)
 7. Open VSCode
 8. Install VSCode extensions (optional, but recommended)
