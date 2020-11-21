@@ -836,7 +836,7 @@ Open up the file `app.json`, so we can tell Expo we have a new image for everyth
 }
 ```
 
-Here you can also add information about your app. Everything I want is here, but there's no description - so I'll add that.
+Here you can also add information about your app. Almost everything I want is here, except for a description - so I'll add that.
 
 ```json
 {
