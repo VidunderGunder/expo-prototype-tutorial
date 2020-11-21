@@ -145,7 +145,7 @@ _Note: If you know your way around an IDE, Git, GitHub and developer tools, you 
 
     Choose `blank` as your template when prompted (it should be the default option), by pressing <kbd>Enter</kbd>
 
-12. Open your newly created project
+12. **Open your newly created project**
 
     Click on `File`, `Open Folder...` or use your OS' shortcut  
     (<kbd>Ctrl</kbd> + <kbd>K</kbd> followed by <kbd>Ctrl</kbd> + <kbd>O</kbd> on Windows)
