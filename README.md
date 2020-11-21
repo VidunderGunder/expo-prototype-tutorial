@@ -791,17 +791,16 @@ Delete `splash.png`, `icon.png`, `adaptive-icon.png` and `favicon.png`.
 
 To simplify and save some time, we will use the same image for all of them.
 
-Find an icon [PixaBay](https://pixabay.com/)
+Some requirements for the icon:
 
-I used [this](https://pixabay.com/vectors/kitten-head-kitty-feline-domestic-576502/), and named it `logo.png`.
+- It must be 1:1 aspect ratio, so you might need to crop
+- Expo wants PNG-files, so if you find a JPG that you really want to use, you can convert it with [JPGtoPNG](https://jpg2png.com/)
 
-_Expo wants PNG-files, so if you find a JPG-only image, use [JPGtoPNG](https://jpg2png.com/) to convert it._
+You can copy [my icon](https://pixabay.com/vectors/kitten-head-kitty-feline-domestic-576502/), or find a new one on [PixaBay](https://pixabay.com/) (the vector search is probably your best bet there).
 
-Put the image in the 📁 `assets`-folder.
+Put the image in the 📁 `assets`-folder, and call it `logo.png`.
 
 Open up the file `app.json`, so we can tell Expo we have a new image for everything. Change every image from 📁 `assets` to our new image.
-
-This is how it will look for me and my `logo.png`:
 
 ```json
 {
